@@ -1,0 +1,24 @@
+<% layout('layouts/boilerplate')%>
+
+
+<h1 class="text-center mb-5 mt-5 shadow p-3 mb-5 bg-body rounded">Transaction History</h1>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">S.No</th>
+        <th scope="col">Sender Email</th>
+        <th scope="col">Reciever Email</th>
+        <th scope="col">Amount</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td><%= senderEmail  %></td>
+        <td><%= recieverEmail  %></td>
+       <td><%= amount %></td> 
+</tbody>
+</thtml>
+</table>

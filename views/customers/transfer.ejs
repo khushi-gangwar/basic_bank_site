@@ -1,0 +1,41 @@
+
+<% layout('layouts/boilerplate')%>
+
+<h1 class="h1 text-center shadow p-3  bg-body rounded " style="margin-top: 3rem;">The safest way to send money online</h1>
+<div class="row">
+  <div class="col">
+    <img src="\images\money1.png" class="card-img-top  mb-5 py-3 ps-5 img-fluid " alt="..." style="max-width: 100%; margin-top:2.5rem; ">
+
+  </div>
+  <div class="col">
+    <div class="card  mb-5 py-2 px-2  " style="max-width: auto; margin-top: 3.3rem; background-color: #41879c;
+    background-image: url(https://www.transparenttextures.com/patterns/light-honeycomb.png);">
+        
+        <form action ='/transfersuccessfull' method="post" >
+            <h1 class="" >Send Money</h1>
+    
+            <div class="mb-3 mt-2">
+              <label for="exampleInputEmail1 mt-3" class="form-label">Transfer From:</label>
+              <input type="text" class="form-control" id="reciever" value="@gmail.com" name="senderemail" aria-describedby="emailHelp">
+            </div>
+    
+            <div class="mb-3 mt-2">
+              <label for="exampleInputEmail1 mt-3" class="form-label">Transfer To:</label>
+              <input type="text" class="form-control" id="reciever" value="@gmail.com" name="recieveremail" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Amount:</label>
+              <input type="number" class="form-control" id="amount" value="0" name="amount">
+            </div>
+            <div class="col col-lg-3 my-auto   " >
+              <button class="btn btn-dark btn-lg btn-block px-5 shadow"><h4>Send</h4> </button>
+            </form>
+
+          </div>
+  </div>
+</div>
+
+
+      
+   
+  </div>

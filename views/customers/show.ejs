@@ -1,0 +1,38 @@
+
+<% layout('layouts/boilerplate')%>
+
+
+  
+    <div class="card mx-auto my-auto p-4" style=" background-color: #316f7d;
+    background-image: url(https://www.transparenttextures.com/patterns/light-honeycomb.png);" >
+      <div class="card-body">
+        <h1 class="card-title text-center" style="border-bottom: 2px black solid; ">Account Holder: <%=customers.CustomerName  %></h1>
+<img src="<%=customers.image %>">
+    
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Account Number:<%=customers.AccountNumber %>
+      </li>
+        <li class="list-group-item">Account Type: <%=customers.AccountType %></li>
+        <li class="list-group-item">Email: <%=customers.Email %></li>
+        <li class="list-group-item">Phone Number: <%=customers.phoneNumber%></li>
+
+        <li class="list-group-item">Citenzenship: <%=customers.citizenship %></li>
+        <li class="list-group-item">Current Balance: <%=customers.CurrentBalance %></li>
+
+        <li class="list-group-item">Last Transaction On: <%=customers.updatedAt %></li>
+
+      </ul>
+    
+    </div>
+  </div>
+
+       
+
+
+
+
+
+
+
+

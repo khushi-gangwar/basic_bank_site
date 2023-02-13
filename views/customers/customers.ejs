@@ -1,0 +1,21 @@
+<% layout('layouts/boilerplate')%>
+
+<h1 class="customersdetails text-center mb-5 mt-5 shadow p-3 mb-5 bg-body rounded">All Customers</h1>
+<% for (let customr of customrs) {%>
+    <div class="card mb-5 bg-dark text-center mx-auto " style="width: 70%;  color:white;">
+        
+      <h4 class="card-title "> Customer Name:  <%=customr.CustomerName %></h4>  
+            <ul class="list-group list-group-flush" >
+                <li class="list-group-item">Account Number: <%=customr.AccountNumber %></li>
+                <li class="list-group-item">Email: <%=customr.Email %></li>
+
+                <li class="list-group-item">Current Balance: <%=customr.CurrentBalance %></li>
+                                <li class="list-group-item">Last Transaction On: <%=customr.updatedAt %></li>
+
+                <a href="/customers/<%=customr._id%>" class="card-link btn btn-info">View More</a>
+
+              </ul>
+            
+</div>
+
+<%}%>
